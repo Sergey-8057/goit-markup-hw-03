@@ -36,7 +36,7 @@ address {
 }
 
 .header-page {
-  border: 1px solid #2e2f42;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .navigation-contact {
@@ -135,12 +135,21 @@ address {
   border-radius: 4px;
   min-width: 169px;
   height: 56px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #404bbf;
   cursor: pointer;
+}
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .visually-hidden {
@@ -159,8 +168,6 @@ address {
 .advantages-list {
   display: flex;
   gap: 24px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .advantages-list-item {
@@ -173,7 +180,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .advantage-text {
@@ -184,6 +191,8 @@ address {
 
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -194,19 +203,18 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .team-list-item {
   background-color: #fff;
   width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-img {
@@ -215,10 +223,9 @@ address {
   height: auto;
 }
 
-.team-list-border {
-  border: 1px solid #fff;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+.team-list-title-text {
+  padding-top: 32px;
+  padding-bottom: 32px
 }
 
 .team-list-title {
@@ -228,8 +235,7 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px
 }
 
 .team-list-text {
@@ -237,7 +243,11 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  padding-bottom: 32px;
+}
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -248,8 +258,7 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -257,7 +266,6 @@ address {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  padding-bottom: 120px;
 }
 
 .portfolio-list-img {
@@ -268,6 +276,7 @@ address {
 
 .portfolio-list-border {
   border: 1px solid #fff;
+  padding: 32px 16px
 }
 
 .portfolio-list-title {
@@ -276,22 +285,17 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .portfolio-list-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
 }
 
 .footer-page {
   background: #2e2f42;
-}
-
-.footer-logo-text {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -305,5 +309,5 @@ span.logo-studio {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   padding-top: 16px;
-  width: 264px;
+  max-width: 264px;
 }
